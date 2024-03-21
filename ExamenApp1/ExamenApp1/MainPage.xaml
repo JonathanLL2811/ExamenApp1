@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="ExamenApp1.MainPage">
+    <!-- Pestaña 1: Área del círculo -->
+    <ContentPage Title="Área del círculo">
+        <StackLayout>
+            <Entry x:Name="radiusEntry" Placeholder="Radio" />
+            <Button Text="Calcular" Clicked="CalculateCircleArea_Clicked" />
+            <Label Text="Resultado:" />
+            <Label x:Name="circleResultLabel" />
+            <Button Text="Limpiar" Clicked="ClearCircleFields_Clicked" />
+        </StackLayout>
+    </ContentPage>
+
+    <!-- Pestaña 2: Área del rectángulo -->
+    <ContentPage Title="Área del rectángulo">
+        <StackLayout>
+            <Entry x:Name="widthEntry" Placeholder="Ancho" />
+            <Entry x:Name="heightEntry" Placeholder="Altura" />
+            <Button Text="Calcular" Clicked="CalculateRectangleArea_Clicked" />
+            <Label Text="Resultado:" />
+            <Label x:Name="rectangleResultLabel" />
+            <Button Text="Limpiar" Clicked="ClearRectangleFields_Clicked" />
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
